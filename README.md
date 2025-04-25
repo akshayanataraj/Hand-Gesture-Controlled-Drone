@@ -2,7 +2,7 @@
 A hand gesture controlled drone built using Pixhawk flight controller and Arduino UNO along with MPU6050 Gyroscope and potentiometer, linked using telemetry.
 
 # Operating Mechanism
-- The Arduino Uno receives pitch and roll data from the MPU6050 gyroscope, and throttle input from a potentiometer. These raw sensor values are mapped to drone-compatible control signals in the range of 1000 to 2000, suitable for RC channel inputs.
+- The Arduino Uno receives pitch (forward and backward tilt) and roll (left and right tilt) data from the MPU6050 gyroscope, and throttle input from a potentiometer. These raw sensor values are mapped to drone-compatible control signals in the range of 1000 to 2000, suitable for RC channel inputs.
 - A Python script, using the MAVLink protocol, transmits the mapped control values from the Arduino to the Pixhawk flight controller via a telemetry link (connected to telem1 port on pixhawk), enabling real-time gesture-based control of the drone. Parameters were also modified accordingly to override RC control in Qgroundcontrol software.
 - The connections for arduino are shown in the circuit_diagram.png file.
 - All parameters to be changed are also given in the gesture.params file. (Refer NOTE)
