@@ -13,6 +13,6 @@ A hand gesture controlled drone built using Pixhawk flight controller and Arduin
 - Go to QGC > Analyze tools > MAVLink inspector > RC_CHANNELS. Once the python code runs, the change in channel 1 (Roll), channel 2 (Pitch), channel 3 (Throttle) values as per the gyroscope and potentiometer readings from arduino will be displayed, which in turn controls the motors.
 
 # NOTE
-**1. Make sure to connect arduino circuit and telemetry transmitter in one PC, and the drone with pixhawk in another for calibration and parameter changes.
+1. Make sure to connect arduino circuit and telemetry transmitter in one PC, and the drone with pixhawk in another for calibration and parameter changes.
 2. COM_POWER_COUNT must be set to 0 for connection with the pixhawk even after disconnecting from PC.
-3. This project is only for throttle, pitch and roll. Yaw has not been implemented due to instability in gesture control.**
+3. This project is only for throttle, pitch and roll. Yaw has not been implemented due to instability in gesture control.
